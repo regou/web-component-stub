@@ -9,8 +9,7 @@ Example:
 ```
 <custom-element-demo>
   <template>
-    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <script src="./demo/x-tag-components.js"></script>
+    <script src="https://github.com/regou/x-num/raw/master/demo/x-tag-components.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
