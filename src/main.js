@@ -1,4 +1,16 @@
-(function () {
+(function (root, factory) {
+	if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
+		// CommonJS
+		factory(exports, require('x-tag'));
+	}else if (typeof define === 'function' && define.amd) {
+		// AMD. Register as an anonymous module.
+		define(['exports', 'x-tag'], factory);
+	} else {
+		// Browser globals
+		factory((root.commonJsStrict = {}), root.xtag);
+	}
+}(this, function (exports, xtag) {
+
 	"use strict";
 
 	function humanize (n, options){
@@ -27,28 +39,20 @@
 		events: {},
 		accessors: {
 			num:{
-				attribute: {
-					validate: function(n){
-						return Number(n);
-					}
-				}
+				attribute: {}
 			},
 			usek:{
-				attribute: {
-					validate: function(n){
-						return parseInt(n);
-					}
-				}
+				attribute: {}
 			}
 		},
 		methods: {
-
 			format:function (num,opt) {
+				var num = Number(num);
 				var opt = opt || {
-					delimiter:this.getAttribute('delimiter'),
-					separator:this.getAttribute('separator'),
-					usek:this.usek || null
-				};
+						delimiter:this.getAttribute('delimiter'),
+						separator:this.getAttribute('separator'),
+						usek:this.usek!==null ? parseInt(this.usek) : null
+					};
 				//{ delimiter: '.', separator: ',', usek:1 }
 
 				function getNumPart() {
@@ -65,4 +69,4 @@
 		}
 	});
 
-})();
+}));
