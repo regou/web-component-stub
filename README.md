@@ -10,6 +10,7 @@ Example:
 <custom-element-demo>
   <template>
     <script src="./demo/x-tag-components.js"></script>
+    <script src="./src/main.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
