@@ -29,11 +29,13 @@
 			},
 			inserted: function () {
 				this.innerHTML = this.format(this.num);
+				this.updateClassName();
 			},
 			removed: function () {
 			},
 			attributeChanged: function (attrName, oldValue, newValue) {
 				this.innerHTML = this.format(this.num);
+				this.updateClassName();
 			}
 		},
 		events: {},
@@ -46,6 +48,10 @@
 			}
 		},
 		methods: {
+			updateClassName:function () {
+				let act = Number(this.num) ? 'remove':'add';
+				this.classList[act]('x-num-zero-num');
+			},
 			format:function (num,opt) {
 				var num = Number(num);
 				var opt = opt || {
