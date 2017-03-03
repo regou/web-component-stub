@@ -1,32 +1,31 @@
-# About
+[![Published on webcomponents.org][webcomponents-image]][webcomponents-url]
 
-This repo is an X-Tag custom web-component stub that can be used as a starting point when building new elements.  It provides that basic tools and grunt tasks to get started.
+## \<x-num\>
 
-# Yo Generator
+Format number.
 
-If you're creating a new component, checkout our Yeoman Generator.
-
+Example:
+<!---
 ```
-https://github.com/x-tag/yo-x-tag-generator
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="./demo/x-tag-components.js"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<!--364,743.45-->
+<x-num num="364743.45"></x-num>
+
+<!--3,647.5k-->
+<x-num num="3647456.45" usek="1"></x-num>
+
+<!--3,646k-->
+<x-num num="3645743" usek="0"></x-num>
 ```
 
-# Dev Setup
-
-```
-Fork this repo, rename it, then clone it.
-
-$ npm install	// install bower tasks
-$ bower install	// install components
-$ grunt build   // build the dependencies
-
-```
-
-# Links
-
-[X-Tags Docs](http://x-tags.org/docs)
-
-[Guide for creating X-Tag Components](https://github.com/x-tag/core/wiki/Creating-X-Tag-Components)
-
-[Using X-Tag components in your applications](https://github.com/x-tag/core/wiki/Using-our-Web-Components-in-Your-Application)
-
-
+[webcomponents-image]: https://img.shields.io/badge/webcomponents.org-published-blue.svg
+[webcomponents-url]: https://beta.webcomponents.org/element/regou/x-num
