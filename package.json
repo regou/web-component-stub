@@ -1,5 +1,5 @@
 {
-  "name": "x-stub",
+  "name": "x-num",
   "version": "1.0.0",
   "peerDependencies": {
     "x-tag": "1.x"
