@@ -1,7 +1,7 @@
 (function (root, factory) {
 	if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
 		// CommonJS
-		factory(exports, require('x-tag'));
+		factory(exports, require('x-tag/dist/x-tag-core.min'));
 	}else if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
 		define(['exports', 'x-tag'], factory);
