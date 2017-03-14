@@ -28,4 +28,4 @@ Example:
 ```
 
 [webcomponents-image]: https://img.shields.io/badge/webcomponents.org-published-blue.svg
-[webcomponents-url]: https://beta.webcomponents.org/element/regou/x-num
+[webcomponents-url]: https://www.webcomponents.org/element/regou/x-num
