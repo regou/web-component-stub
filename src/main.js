@@ -49,7 +49,7 @@
 		},
 		methods: {
 			updateClassName:function () {
-				let act = Number(this.num) ? 'remove':'add';
+				var act = Number(this.num) ? 'remove':'add';
 				this.classList[act]('x-num-zero-num');
 			},
 			format:function (num,opt) {

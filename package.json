@@ -1,6 +1,6 @@
 {
   "name": "x-num",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "./src/main.js",
   "peerDependencies": {
     "x-tag": "1.x"
